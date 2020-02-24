@@ -9,11 +9,11 @@ WORKDIR $SRC_DIR
 RUN pip install --upgrade pip
 
 RUN git clone https://github.com/martinroyer/atol
-cd atol
+WORKDIR atol
 RUN pip install .
 
-git clone https://github.com/MathieuCarriere/perslay
-cd perslay
+RUN git clone https://github.com/MathieuCarriere/perslay
+WORKDIR perslay
 RUN pip install .
 
 RUN pip install plotnine
