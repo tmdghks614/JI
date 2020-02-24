@@ -26,4 +26,3 @@ RUN pip install xgboost
 RUN pip install -U imbalanced-learn
 RUN pip install -U giotto-tda
 
-RUN pip install -r requirements.txt
