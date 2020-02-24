@@ -8,6 +8,7 @@ WORKDIR $SRC_DIR
 
 RUN pip install --upgrade pip
 
+RUN pip install pydot
 RUN pip install plotnine
 RUN pip install umap-learn
 RUN pip install graphviz
