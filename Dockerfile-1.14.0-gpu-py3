@@ -8,13 +8,12 @@ WORKDIR $SRC_DIR
 
 RUN pip install --upgrade pip
 
-
+RUN git clone https://github.com/martinroyer/atol
 RUN pip install plotnine
 RUN pip install umap-learn
 RUN pip install graphviz
 RUN pip install xgboost
 RUN pip install -U imbalanced-learn
-RUN pip install keras-unet
-RUN pip install scikit-image
+
 
 RUN pip install -r requirements.txt
