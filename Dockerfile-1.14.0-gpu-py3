@@ -13,6 +13,6 @@ RUN pip install umap-learn
 RUN pip install graphviz
 RUN pip install xgboost
 RUN pip install -U imbalanced-learn
-
+RUN pip install -U giotto-tda
 
 RUN pip install -r requirements.txt
